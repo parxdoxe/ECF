@@ -133,9 +133,17 @@ header {
     width: 30px;
   }
 
-  .sidenav .login:hover {
+  .sidenav .loginBurger a {
+    color: #fff;
     background-color: #6415ff;
     border-radius: 10px;
+    transition: 0.2s;
+  }
+
+  .sidenav .loginBurger:hover {
+    background-color: #6415ff;
+    border-radius: 10px;
+    opacity: 0.7;
   }
   
 
@@ -450,7 +458,7 @@ header {
     
     .first-card .left {
         height: 100%;
-        width: 100%;
+        width: 90%;
         align-items: center;
         text-align: center;
         justify-content: space-evenly;
@@ -517,7 +525,5 @@ header {
     .first-card .rigth .skew {
         width: 50%;  
     }
-    .second-card .rigth .install {
-        margin-top: 30px;
-    }
+    
 }

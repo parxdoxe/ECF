@@ -211,6 +211,18 @@ header {
     border-radius: 20px;
 }
 
+.first-card .rigth .image.active {
+    display: none;
+}
+
+.first-card .rigth iframe {
+    display: none;
+}
+
+.first-card .rigth .frame.active{
+    display: block;
+}
+
 .first-card .rigth svg {
     width: 100px;
     position: absolute;

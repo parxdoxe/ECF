@@ -21,6 +21,13 @@ function commande(){
   verify.classList.add("active")
 }
 
+var image = document.querySelector(".image")
+var frame = document.querySelector(".frame")
+function video () {
+  image.classList.toggle("active")
+  frame.classList.toggle("active")
+}
+
 var count = document.getElementById("count")
 let i = 5
 

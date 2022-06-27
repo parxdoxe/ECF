@@ -51,7 +51,8 @@ header {
 }
 
 .navBar a:hover {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #6415ff;
+    color: #6415ff;
 }
 
 .log {
@@ -78,38 +79,53 @@ header {
 
 .first-card {
     display: flex;
+    justify-content: center;
+    align-items: center;
     color: #243e63;
+    height: 300px;
 }
 
-.left {
+
+.first-card .left {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     width: 50%;
+    height: 100%;
 }
 
-.left h1 {
+.first-card .left h1 {
     font-size: 3rem;
 }
 
-.left span {
+.first-card .left span {
     background-color: #6415ff;
 }
-.left p {
+.first-card .left p {
    color: #a2a5ac;
 }
 
-.rigth {
+.first-card .rigth {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 50%;
+    width: 30%;
 }
 
-.rigth img {
-    width: 60%;
+.first-card .rigth img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
+}
+
+.first-card .rigth svg {
+    width: 100px;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    z-index: -1;
+    color: #6415ff;
 }
 
 .left-bottom {
@@ -125,6 +141,11 @@ header {
     background-color: #6415ff;
     margin-right: 30px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.left-bottom .command:hover {
+    background-color: #243e63;
 }
 
 .left-bottom .chef {
@@ -134,8 +155,91 @@ header {
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.left-bottom .chef:hover {
+    color: #6415ff;
 }
 
 .left-bottom .chef svg {
     margin-right: 10px;
+}
+
+.second-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #243e63;
+    height: 300px;
+}
+
+.second-card .rigth {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+.second-card .rigth h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.second-card .rigth span {
+    background-color: #6415ff;
+}
+.second-card .rigth p {
+   color: #a2a5ac;
+   margin-bottom: 20px;
+}
+
+.second-card .left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.second-card .left img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.second-card .left svg {
+    width: 100px;
+    position: absolute;
+    bottom: 40%;
+    left: -30px ;
+    z-index: -1;
+    color: #6415ff;
+}
+
+
+.rigth-bottom button {
+    border: 0;
+    cursor: pointer;
+    background-color: #6415ff;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.rigth-bottom button:hover {
+    background-color: #243e63;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
 }

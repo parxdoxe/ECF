@@ -99,6 +99,7 @@ header {
 }
 
 .first-card .left span {
+    color: #fff;
     background-color: #6415ff;
 }
 .first-card .left p {
@@ -184,19 +185,24 @@ header {
 }
 
 
-
-
 .second-card .rigth h1 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
 .second-card .rigth span {
+    color: #fff;
     background-color: #6415ff;
 }
 .second-card .rigth p {
    color: #a2a5ac;
    margin-bottom: 20px;
+}
+
+.second-card .rigth .install {
+    color: #6415ff;
+    font-size: 10px;
+    margin: 0;
 }
 
 .second-card .left {
@@ -242,4 +248,67 @@ header {
     flex-direction: column;
     height: 100%;
     justify-content: space-around;
+}
+
+@media (max-width: 992px ) {
+    body {
+        height: 200vh;
+        
+    }
+    
+    .first-card {
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .first-card .left {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .first-card .left h1 {
+        font-size: 2rem;
+    }
+
+    .first-card .rigth {
+        justify-content: center;
+        width: 100%;
+    }
+    .first-card .rigth img {
+        width: 90%;
+    }
+    .first-card .rigth svg {
+        bottom: -10px;
+        right: 15px;
+        width: 60px;
+    }
+    .second-card {
+        flex-direction: column;
+        height: 100%;
+        margin-top: 50px;
+    }
+    .second-card .left {
+        justify-content: center;
+        width: 100%;
+    }
+    .second-card .left img {
+        width: 90%;
+    }
+
+    .second-card .left svg {
+        left: 182px;
+        bottom: -30px;
+    }
+    
+    .second-card .rigth {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    .second-card .rigth h1 {
+        font-size: 2rem;
+    }
 }

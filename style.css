@@ -79,12 +79,12 @@ header {
 }
 
 
-
+/* Menu Burger */
 .sidenav {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 250px;
+    height: 280px;
     width: 100%;
     position: fixed;
     z-index: 1;

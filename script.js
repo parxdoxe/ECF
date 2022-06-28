@@ -57,11 +57,27 @@ function numberRandom (){
 }
 
 
+
+
+
+
+
 function newsletter(){
   var mail = document.getElementById("mail").value
   var affichage = document.getElementById("affichageMail")
   var inscription = document.querySelector(".inscription")
 
-  inscription.classList.toggle("active")
-  affichage.innerHTML = "Merci " + mail 
+  if (mail == "") {
+    document.getElementById("inscription").disabled = false
+  } else if (!mail == "") {
+    document.getElementById("inscription").disabled = true
+    inscription.classList.toggle("active")
+    affichage.innerHTML = "Merci " + mail 
+  }
+
 }
+
+
+
+
+

@@ -9,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
 }
 
 
@@ -173,7 +172,7 @@ header {
     
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 90vh;
     justify-content: space-around;
 }
 
@@ -223,6 +222,7 @@ header {
 }
 .first-card .left p {
    color: #a2a5ac;
+   width: 70%;
 }
 
 .first-card .rigth {
@@ -395,6 +395,284 @@ header {
     background-color: #243e63;
 }
 
+/* Partie 2 */
+
+
+/* Page 2 */
+.container-prestation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container-prestation h2 {
+    display: flex;
+    color: #243e63;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.container-prestation .skew {
+    margin-left: 5px;
+    padding: 5px;
+    color: #fff;
+    background-color: #6415ff;
+    transform: skewX(-15deg);
+}
+
+.prestation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 30%;
+}
+
+.boxPresta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+
+.boxPresta img{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.boxPresta img:hover {
+    transform: scale(1.5);
+}
+
+.boxPresta h4 {
+    font-weight: bold;
+}
+
+.boxPresta a {
+text-decoration: none;
+color: #6415ff;
+font-weight: bold;
+
+}
+
+.boxPresta span {
+    margin-left: 5px;
+}
+
+/* Page 3 */
+
+.container-reputation {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100vh;
+}
+
+.third-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #243e63;
+    height: 300px;
+}
+
+
+.third-card .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+}
+
+.third-card .left .marque {
+    font-size: 12px;
+    color: #6415ff;
+}
+
+.third-card .left h1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+}
+
+.third-card .left .skew {
+    color: #fff;
+    background-color: #6415ff;
+    text-align: center;
+    transform: skewX(-15deg);
+    margin-left: 5px;
+}
+.third-card .left p {
+   color: #a2a5ac;
+   width: 70%;
+}
+
+.third-card .middle {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.third-card .middle p {
+    color: #6415ff;
+}
+
+.third-card .right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+.third-card .right .blob {
+    position: absolute;
+    top: 0;
+    left: -160px;
+    z-index: -2;
+}
+
+.third-card .right img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8eaee;
+    height: 350px;
+}
+
+.list-news {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    list-style: none;
+}
+
+.list li:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.list li {
+    padding-bottom: 10px;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    height: 100%;
+    width: 30%;
+}
+
+.news h5 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.news p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.inscription {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.news input {
+    padding: 10px 20px;
+    width: 70%;
+    border: 2px solid #a2a5ac;
+}
+
+.news button {
+    border: 0;
+    padding: 10px 20px;
+    background-color: #6415ff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 1px;
+background-color: #a2a5ac;
+margin-bottom: 10px;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.bottom .logo {
+    width: 27%;
+}
+
+.bottom p {
+    color: #a2a5ac;
+    width: 30%;
+}
+
+.bottom .social-media {
+   
+    width: 30%;
+}
+
+.social-media img {
+    cursor: pointer;
+    margin-right: 20px;
+    width: 30px;
+}
+
+
+
+
+
 
 
 @media (max-width: 1200px) {
@@ -449,6 +727,10 @@ header {
 
     .burger-icon span {
         visibility: inherit
+    }
+
+    .container{
+        height: 100%;
     }
     
     .first-card {
@@ -524,6 +806,118 @@ header {
     }
     .first-card .rigth .skew {
         width: 50%;  
+    }
+
+    .container-prestation{
+        height: 100%;
+        margin-top: 100px;
+    }
+
+    .container-prestation h2{
+        font-size: 2rem;
+    }
+
+
+    .prestation {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .boxPresta{
+        width: 100%;
+        justify-content: center;
+        height: 35%;
+    }
+
+    .third-card {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    
+    .third-card .left {
+        height: 100%;
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .third-card .left .marque {
+        text-align: center;
+    }
+
+    .third-card .left h1 {
+        font-size: 2rem;
+    }
+
+
+    .third-card .right {
+        justify-content: center;
+        width: 100%;
+    }
+    .third-card .right .blob {
+        display: none;
+    }
+    .third-card .right img {
+        width: 75%;
+        height: 75%;
+    }
+
+    .container-reputation {
+        display: block;
+    }
+
+    footer {
+        height: 650px;
+    }
+
+    .list-news{
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .list {
+        width: 90%;
+    }
+
+    .news{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+    }
+
+    .inscription {
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer .bottom {
+        height: 200px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    footer .bottom .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer .bottom p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer .bottom .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
     
 }

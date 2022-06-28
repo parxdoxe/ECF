@@ -36,3 +36,22 @@ function counter (){
   i++
   count.innerHTML = i
 }
+
+var number0 = document.getElementById("number0")
+var number1 = document.getElementById("number1")
+var number2 = document.getElementById("number2")
+
+
+function random (min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+
+function numberRandom (){
+  let number = random(500, 1000000)
+  let numberC = random(500, 100000)
+  let numberCh = random(300, 10000)
+  number0.innerHTML = number
+  number1.innerHTML = numberC
+  number2.innerHTML = numberCh
+}

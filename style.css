@@ -619,6 +619,11 @@ footer {
     padding: 10px 20px;
     width: 70%;
     border: 2px solid #a2a5ac;
+    outline: none;
+}
+
+.news input:focus{
+   border: 2px solid #6415ff;
 }
 
 .news button {

@@ -55,3 +55,13 @@ function numberRandom (){
   number1.innerHTML = numberC
   number2.innerHTML = numberCh
 }
+
+
+function newsletter(){
+  var mail = document.getElementById("mail").value
+  var affichage = document.getElementById("affichageMail")
+  var inscription = document.querySelector(".inscription")
+
+  inscription.classList.toggle("active")
+  affichage.innerHTML = "Merci " + mail 
+}

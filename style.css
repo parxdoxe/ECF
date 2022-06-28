@@ -634,6 +634,20 @@ footer {
     border-bottom-right-radius: 5px;
     color: #fff;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.news button:hover{
+    opacity: 0.7;
+}
+
+.inscription.active{
+    display: none;
+}
+
+#affichageMail{
+    color: #6415ff;
 }
 
 .line {
